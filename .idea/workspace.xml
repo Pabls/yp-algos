@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30030f82-7cf9-4c30-b3be-3da43d08a231" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practicum.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sprint_1/a_functions/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sprint_1/b_numbers/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sprint_1/c_neighbors/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sprint_1/d_weather/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sprint_1/e_long_word/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sprint_1/f_palindrome/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sprint_1/g_home_work/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sprint_1/h_binary_sum/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sprint_1/i_four/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sprint_1/j_factorization/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sprint_1/k_lists/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sprint_1/l_extra_letter/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sprint_1/xyz_final_tasks/a/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sprint_1/xyz_final_tasks/b/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_2/a/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_2/b/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_2/c/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_2/d/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_2/e/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,19 +34,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.sprint_1.xyz_final_tasks.b.Main">
+}</component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sprint_1.xyz_final_tasks.a.Main" />
+      <option name="MAIN_CLASS_NAME" value="sprint_2.a.Main" />
       <module name="practicum" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sprint_1.xyz_final_tasks.a.*" />
+          <option name="PATTERN" value="sprint_2.a.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,12 +55,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sprint_1.j_factorization.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sprint_1.j_factorization.Main" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sprint_2.b.Solution" />
       <module name="practicum" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sprint_1.j_factorization.*" />
+          <option name="PATTERN" value="sprint_2.b.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sprint_1.k_lists.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sprint_1.k_lists.Main" />
+    <configuration name="sprint_2.c.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sprint_2.c.Solution" />
       <module name="practicum" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sprint_1.k_lists.*" />
+          <option name="PATTERN" value="sprint_2.c.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sprint_1.l_extra_letter.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sprint_1.l_extra_letter.Main" />
+    <configuration name="sprint_2.d.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sprint_2.d.Solution" />
       <module name="practicum" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sprint_1.l_extra_letter.*" />
+          <option name="PATTERN" value="sprint_2.d.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sprint_1.xyz_final_tasks.b.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sprint_1.xyz_final_tasks.b.Main" />
+    <configuration name="sprint_2.e.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sprint_2.e.Solution" />
       <module name="practicum" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sprint_1.xyz_final_tasks.b.*" />
+          <option name="PATTERN" value="sprint_2.e.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.sprint_1.xyz_final_tasks.b.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.sprint_1.k_lists.Main" />
-        <item itemvalue="Application.sprint_1.l_extra_letter.Main" />
-        <item itemvalue="Application.sprint_1.j_factorization.Main" />
+        <item itemvalue="Application.sprint_2.e.Solution" />
+        <item itemvalue="Application.sprint_2.d.Solution" />
+        <item itemvalue="Application.sprint_2.c.Solution" />
+        <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
   </component>
