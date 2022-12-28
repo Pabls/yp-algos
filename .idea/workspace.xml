@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="30030f82-7cf9-4c30-b3be-3da43d08a231" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicum.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_1/a_functions/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_1/b_numbers/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_1/c_neighbors/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_1/d_weather/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_1/e_long_word/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_1/f_palindrome/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_1/g_home_work/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_1/h_binary_sum/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_1/i_four/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_1/j_factorization/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_1/k_lists/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_1/l_extra_letter/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_1/xyz_final_tasks/a/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_1/xyz_final_tasks/b/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JEjJwdCaNbyBkXnh64JO1B3nsZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.sprint_1.xyz_final_tasks.b.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sprint_1.xyz_final_tasks.a.Main" />
+      <module name="practicum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sprint_1.xyz_final_tasks.a.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sprint_1.j_factorization.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sprint_1.j_factorization.Main" />
+      <module name="practicum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sprint_1.j_factorization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sprint_1.k_lists.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sprint_1.k_lists.Main" />
+      <module name="practicum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sprint_1.k_lists.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sprint_1.l_extra_letter.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sprint_1.l_extra_letter.Main" />
+      <module name="practicum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sprint_1.l_extra_letter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sprint_1.xyz_final_tasks.b.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sprint_1.xyz_final_tasks.b.Main" />
+      <module name="practicum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sprint_1.xyz_final_tasks.b.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.sprint_1.xyz_final_tasks.b.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.sprint_1.k_lists.Main" />
+        <item itemvalue="Application.sprint_1.l_extra_letter.Main" />
+        <item itemvalue="Application.sprint_1.j_factorization.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30030f82-7cf9-4c30-b3be-3da43d08a231" name="Changes" comment="" />
+      <created>1671650070769</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671650070769</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
