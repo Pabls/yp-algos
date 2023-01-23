@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30030f82-7cf9-4c30-b3be-3da43d08a231" name="Changes" comment="sprint 2: LinkedList">
-      <change afterPath="$PROJECT_DIR$/src/sprint_2/f/StackMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sprint_2/f/StackNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sprint_2/g/StackMaxEffective.java" afterDir="false" />
+    <list default="true" id="30030f82-7cf9-4c30-b3be-3da43d08a231" name="Changes" comment="sprint 2: Final tasks">
+      <change afterPath="$PROJECT_DIR$/src/sprint_2/xyz_final_tasks/a/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_2/xyz_final_tasks/b/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_2/xyz_final_tasks/test/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +38,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.StackMax">
+  <component name="RunManager" selected="Application.sprint_2.xyz_final_tasks.a.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sprint_2.a.Main" />
       <module name="practicum" />
@@ -58,19 +58,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sprint_2.f.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sprint_2.c.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sprint_2.c.Solution" />
-      <module name="practicum" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sprint_2.c.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,13 +91,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="sprint_2.xyz_final_tasks.a.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sprint_2.xyz_final_tasks.a.Main" />
+      <module name="practicum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sprint_2.xyz_final_tasks.a.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.sprint_2.xyz_final_tasks.a.Main" />
         <item itemvalue="Application.StackMax" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.sprint_2.e.Solution" />
         <item itemvalue="Application.sprint_2.d.Solution" />
-        <item itemvalue="Application.sprint_2.c.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -146,6 +146,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sprint 2: LinkedList" />
-    <option name="LAST_COMMIT_MESSAGE" value="sprint 2: LinkedList" />
+    <MESSAGE value="sprint 2: Final tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="sprint 2: Final tasks" />
   </component>
 </project>
