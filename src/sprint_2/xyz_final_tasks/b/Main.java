@@ -6,6 +6,24 @@ import java.io.InputStreamReader;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
+// B. Калькулятор
+// Отчет 81183357
+// https://contest.yandex.ru/contest/22781/run-report/81183357/
+
+/*
+-- ПРИНЦИП РАБОТЫ --
+*
+*
+-- ДОКАЗАТЕЛЬСТВО КОРРЕКТНОСТИ --
+*
+*
+-- ВРЕМЕННАЯ СЛОЖНОСТЬ --
+*
+*
+-- ПРОСТРАНСТВЕННАЯ СЛОЖНОСТЬ --
+*
+*
+* */
 public class Main {
 
     public static void main(String[] args) throws IOException {

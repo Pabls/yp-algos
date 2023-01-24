@@ -2,6 +2,24 @@ package sprint_2.xyz_final_tasks.a;
 
 import java.util.Scanner;
 
+// A. Дек
+// Отчет 81278296
+// https://contest.yandex.ru/contest/22781/run-report/81278296/
+
+/*
+-- ПРИНЦИП РАБОТЫ --
+*
+*
+-- ДОКАЗАТЕЛЬСТВО КОРРЕКТНОСТИ --
+*
+*
+-- ВРЕМЕННАЯ СЛОЖНОСТЬ --
+*
+*
+-- ПРОСТРАНСТВЕННАЯ СЛОЖНОСТЬ --
+*
+*
+* */
 public class Main {
 
     public static void main(String[] args) {
