@@ -1,6 +1,5 @@
 package sprint_2.j;
 
-import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Main {
@@ -8,17 +7,15 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int commandCount = Integer.parseInt(scanner.nextLine());
         String[] commands = new String[commandCount];
+        StringBuilder sb = new StringBuilder();
+        LinkedQueue lk = new LinkedQueue();
 
         for (int i = 0; i < commandCount; i++) {
             commands[i] = scanner.nextLine();
         }
 
-        StringBuilder sb = new StringBuilder();
-        LinkedQueue lk = new LinkedQueue();
-
         for (int i = 0; i < commandCount; i++) {
             String command = commands[i];
-            System.out.println("command is " + command);
             if (command.equals("get")) {
                 sb.append(lk.get()).append("\n");
             } else if (command.equals("size")) {
@@ -27,7 +24,6 @@ public class Main {
                 String value = getValueFromCommand(command);
                 lk.put(value);
             }
-            System.out.println("--------------------");
         }
 
         System.out.println(sb);
@@ -47,60 +43,29 @@ class LinkedQueue {
     private int itemsCount = 0;
 
 
-    LinkedQueue() {
-        head = new Node();
-        tail = new Node();
-        head.next = tail;
-        tail.prev = head;
-    }
-
-
     String get() {
         if (itemsCount == 0) {
             return "error";
         }
-
+        Node n = head;
+        String value = n.value;
+        head = n.next;
         itemsCount--;
-
-        String value = head.value;
-        Node next = head.next;
-        head = new Node(null, next.value, next.next);
         return value;
     }
 
     void put(String value) {
+        if (head != null) {
+            Node n = head;
+            boolean hasNext = n.next != null;
+            while (n.next != null) {
+                n = n.next;
+            }
+            n.next = new Node(value);
+        } else {
+            head = new Node(value);
+        }
         itemsCount++;
-
-        if (head.value == null) {
-            head.value = value;
-            return;
-        }
-
-        if (tail.value == null) {
-            tail.value = value;
-            return;
-        }
-
-        final Node l = tail;
-        final Node newNode = new Node(l, value, null);
-        tail = newNode;
-        l.next = newNode;
-
-//
-//        if(tail == null) {
-//            tail = new Node()
-//        }
-//
-//        if (head == null) {
-//            head = new Node(value);
-//        } else if (tail == null) {
-//            tail = new Node(value);
-//            head.setNext(tail);
-//        } else {
-//            tail.setNext(new Node(value));
-//            tail = tail.getNext();
-//            System.out.println("!!!! " + head.next);
-//        }
     }
 
     int getSize() {
@@ -113,7 +78,8 @@ class LinkedQueue {
         private Node prev;
         private String value;
 
-        public Node() {
+        public Node(String value) {
+            this.value = value;
         }
 
         public Node(Node prev, String value, Node next) {

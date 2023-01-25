@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30030f82-7cf9-4c30-b3be-3da43d08a231" name="Changes" comment="sprint 2: task I">
-      <change afterPath="$PROJECT_DIR$/src/sprint_2/i/Main.java" afterDir="false" />
+    <list default="true" id="30030f82-7cf9-4c30-b3be-3da43d08a231" name="Changes" comment="sprint 2: add description">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sprint_2/j/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_2/j/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sprint_2/k/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_2/k/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sprint_2/l/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_2/l/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sprint_2/xyz_final_tasks/a/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_2/xyz_final_tasks/a/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sprint_2/xyz_final_tasks/b/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_2/xyz_final_tasks/b/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +36,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.sprint_2.xyz_final_tasks.b.Main">
+  <component name="RunManager" selected="Application.sprint_2.j.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sprint_2.l.Main" />
       <module name="practicum" />
@@ -109,8 +104,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.sprint_2.xyz_final_tasks.b.Main" />
         <item itemvalue="Application.sprint_2.j.Main" />
+        <item itemvalue="Application.sprint_2.xyz_final_tasks.b.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.sprint_2.test.Main" />
         <item itemvalue="Application.sprint_2.k.Main" />
@@ -147,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674582946615</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="sprint 2: add description">
+      <created>1674670406292</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674670406292</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +167,7 @@
     <MESSAGE value="sprint 2: LinkedList" />
     <MESSAGE value="sprint 2: Final tasks" />
     <MESSAGE value="sprint 2: task I" />
-    <option name="LAST_COMMIT_MESSAGE" value="sprint 2: task I" />
+    <MESSAGE value="sprint 2: add description" />
+    <option name="LAST_COMMIT_MESSAGE" value="sprint 2: add description" />
   </component>
 </project>
