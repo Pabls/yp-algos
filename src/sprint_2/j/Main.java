@@ -1,39 +1,33 @@
 package sprint_2.j;
 
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int commandCount = Integer.parseInt(scanner.nextLine());
-        int queueSize = Integer.parseInt(scanner.nextLine());
         String[] commands = new String[commandCount];
+
         for (int i = 0; i < commandCount; i++) {
             commands[i] = scanner.nextLine();
         }
 
-        // обработка данных
-        MyQueueSized queue = new MyQueueSized(queueSize);
         StringBuilder sb = new StringBuilder();
+        LinkedQueue lk = new LinkedQueue();
 
         for (int i = 0; i < commandCount; i++) {
             String command = commands[i];
-            if (command.equals("peek")) {
-                String value = queue.peek();
-                sb.append(value).append("\n");
-            } else if (command.equals("pop")) {
-                String value = queue.pop();
-                sb.append(value).append("\n");
+            System.out.println("command is " + command);
+            if (command.equals("get")) {
+                sb.append(lk.get()).append("\n");
             } else if (command.equals("size")) {
-                int size = queue.getSize();
-                sb.append(size).append("\n");
+                sb.append(lk.getSize()).append("\n");
             } else {
                 String value = getValueFromCommand(command);
-                boolean isSuccess = queue.push(value);
-                if (!isSuccess) {
-                    sb.append("error").append("\n");
-                }
+                lk.put(value);
             }
+            System.out.println("--------------------");
         }
 
         System.out.println(sb);
@@ -46,49 +40,86 @@ public class Main {
     }
 }
 
-class MyQueueSized {
+class LinkedQueue {
 
+    private Node head;
+    private Node tail;
     private int itemsCount = 0;
-    private String[] queue;
-    private int head = 0;
-    private int tail = 0;
 
-    MyQueueSized(int maxSize) {
-        queue = new String[maxSize];
+
+    LinkedQueue() {
+        head = new Node();
+        tail = new Node();
+        head.next = tail;
+        tail.prev = head;
     }
 
-    boolean push(String value) {
-        if (itemsCount == queue.length) {
-            return false;
-        }
 
-        queue[tail] = value;
-        tail = (tail + 1) % queue.length;
-        itemsCount++;
-        return true;
-    }
-
-    String pop() {
+    String get() {
         if (itemsCount == 0) {
-            return "None";
+            return "error";
         }
 
-        String value = queue[head];
-        queue[head] = null;
-        head = (head + 1) % queue.length;
         itemsCount--;
+
+        String value = head.value;
+        Node next = head.next;
+        head = new Node(null, next.value, next.next);
         return value;
     }
 
-    String peek() {
-        if (itemsCount == 0) {
-            return "None";
-        } else {
-            return queue[head];
+    void put(String value) {
+        itemsCount++;
+
+        if (head.value == null) {
+            head.value = value;
+            return;
         }
+
+        if (tail.value == null) {
+            tail.value = value;
+            return;
+        }
+
+        final Node l = tail;
+        final Node newNode = new Node(l, value, null);
+        tail = newNode;
+        l.next = newNode;
+
+//
+//        if(tail == null) {
+//            tail = new Node()
+//        }
+//
+//        if (head == null) {
+//            head = new Node(value);
+//        } else if (tail == null) {
+//            tail = new Node(value);
+//            head.setNext(tail);
+//        } else {
+//            tail.setNext(new Node(value));
+//            tail = tail.getNext();
+//            System.out.println("!!!! " + head.next);
+//        }
     }
 
     int getSize() {
         return itemsCount;
+    }
+
+
+    private static class Node {
+        private Node next;
+        private Node prev;
+        private String value;
+
+        public Node() {
+        }
+
+        public Node(Node prev, String value, Node next) {
+            this.next = next;
+            this.prev = prev;
+            this.value = value;
+        }
     }
 }
