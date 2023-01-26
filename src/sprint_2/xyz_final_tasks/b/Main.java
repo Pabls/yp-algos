@@ -7,8 +7,8 @@ import java.util.Stack;
 import java.util.StringTokenizer;
 
 // B. Калькулятор
-// Отчет 81183357
-// https://contest.yandex.ru/contest/22781/run-report/81183357/
+// Отчет 81382393
+// https://contest.yandex.ru/contest/22781/run-report/81382393/
 
 /*
 -- ПРИНЦИП РАБОТЫ --
@@ -36,45 +36,37 @@ public class Main {
         Stack<Integer> digits = new Stack<>();
         while (tokenizer.hasMoreTokens()) {
             String token = tokenizer.nextToken();
-            Integer digit = parseToken(token);
-            if (digit != null) {
-                digits.push(digit);
-            } else {
-                performOperation(digits, token);
-            }
+            handleToken(token, digits);
         }
-
         System.out.println(digits.pop());
     }
 
-    private static Integer parseToken(String token) {
-        Integer result;
-        try {
-            result = Integer.parseInt(token);
-        } catch (NumberFormatException ex) {
-            result = null;
-        }
-        return result;
-    }
 
-    private static void performOperation(Stack<Integer> digits, String token) {
-        int firstValue = digits.pop();
-        int secondValue = digits.pop();
+    private static void handleToken(String token, Stack<Integer> digits) {
         switch (token) {
             case "+":
-                digits.push(secondValue + firstValue);
+                int firstAdditionValue = digits.pop();
+                int secondAdditionValue = digits.pop();
+                digits.push(secondAdditionValue + firstAdditionValue);
                 break;
             case "-":
-                digits.push(secondValue - firstValue);
+                int firstSubtractionValue = digits.pop();
+                int secondSubtractionValue = digits.pop();
+                digits.push(secondSubtractionValue - firstSubtractionValue);
                 break;
             case "*":
-                digits.push(secondValue * firstValue);
+                int firstMultiplicationValue = digits.pop();
+                int secondMultiplicationValue = digits.pop();
+                digits.push(secondMultiplicationValue * firstMultiplicationValue);
                 break;
             case "/":
-                digits.push(Math.floorDiv(secondValue, firstValue));
+                int firstDivisionValue = digits.pop();
+                int secondDivisionValue = digits.pop();
+                digits.push(Math.floorDiv(secondDivisionValue, firstDivisionValue));
                 break;
             default:
-                break;
+                int digit = Integer.parseInt(token);
+                digits.push(digit);
         }
     }
 }

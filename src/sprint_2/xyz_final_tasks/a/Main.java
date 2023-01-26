@@ -3,8 +3,8 @@ package sprint_2.xyz_final_tasks.a;
 import java.util.Scanner;
 
 // A. Дек
-// Отчет 81278296
-// https://contest.yandex.ru/contest/22781/run-report/81278296/
+// Отчет 81382927
+// https://contest.yandex.ru/contest/22781/run-report/81382927/
 
 /*
 -- ПРИНЦИП РАБОТЫ --
@@ -23,6 +23,8 @@ import java.util.Scanner;
 -- ВРЕМЕННАЯ СЛОЖНОСТЬ --
 * В условии задачи было отмечено что все операции должны выполняться за O(1) , что и реализованно так как доступ к элементу ,
 * расположенному в массиве осуществляется за O(1) и нет итераций по элементам массива
+* В связи с тем, что для выполнения всех операций ввода нужно обработать каждый элемент,
+* общая временная сложность данного решения будет O(n)
 *
 -- ПРОСТРАНСТВЕННАЯ СЛОЖНОСТЬ --
 * При полном заполнении массива элементами в количестве n элементов,
@@ -33,27 +35,23 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // Чтение данных
         Scanner scanner = new Scanner(System.in);
+
         int commandsCount = Integer.parseInt(scanner.nextLine());
         int bufferSize = Integer.parseInt(scanner.nextLine());
-        String[] commands = new String[commandsCount];
 
-        for (int i = 0; i < commandsCount; i++) {
-            commands[i] = scanner.nextLine();
-        }
-
-        // Обработка данных
-        CircleBuffer buffer = new CircleBuffer(bufferSize);
+        CircleBuffer<Integer> buffer = new CircleBuffer<>(bufferSize);
         StringBuilder sb = new StringBuilder();
 
-        for (String command : commands) {
+        for (int i = 0; i < commandsCount; i++) {
+            String command = scanner.nextLine();
             handleCommand(command, buffer, sb);
         }
+
         System.out.println(sb);
     }
 
-    private static void handleCommand(String command, CircleBuffer buffer, StringBuilder sb) {
+    private static void handleCommand(String command, CircleBuffer<Integer> buffer, StringBuilder sb) {
         if (command.equals("pop_front")) {
             setResult(buffer.popFront(), sb);
         } else if (command.equals("pop_back")) {
@@ -67,13 +65,13 @@ public class Main {
         }
     }
 
-    private static String getValueFromCommand(String command) {
+    private static Integer getValueFromCommand(String command) {
         int startIndex = command.indexOf(" ");
         int endIndex = command.length();
-        return command.substring(startIndex + 1, endIndex);
+        return Integer.parseInt(command.substring(startIndex + 1, endIndex));
     }
 
-    private static void setResult(String res, StringBuilder sb) {
+    private static void setResult(Integer res, StringBuilder sb) {
         if (res == null) {
             sb.append("error");
         } else {
@@ -89,17 +87,17 @@ public class Main {
     }
 }
 
-class CircleBuffer {
-    private String[] deque;
+class CircleBuffer<T> {
+    private T[] deque;
     private int head = 0;
     private int tail = 0;
     private int itemsCount = 0;
 
     CircleBuffer(int size) {
-        deque = new String[size];
+        deque = (T[]) new Object[size];
     }
 
-    boolean pushFront(String value) {
+    boolean pushFront(T value) {
         if (itemsCount == deque.length) {
             return false;
         }
@@ -111,7 +109,7 @@ class CircleBuffer {
         return true;
     }
 
-    boolean pushBack(String value) {
+    boolean pushBack(T value) {
         if (itemsCount == deque.length) {
             return false;
         }
@@ -123,27 +121,27 @@ class CircleBuffer {
         return true;
     }
 
-    String popFront() {
+    T popFront() {
         if (itemsCount == 0) {
             return null;
         }
 
         // Ищем элемент
-        String res = deque[head];
+        T res = deque[head];
         deque[head] = null;
         head = (head + 1) % deque.length;
         itemsCount--;
         return res;
     }
 
-    String popBack() {
+    T popBack() {
         if (itemsCount == 0) {
             return null;
         }
 
         // Ищем элемент
         tail = (tail - 1 + deque.length) % deque.length;
-        String res = deque[tail];
+        T res = deque[tail];
         deque[tail] = null;
         itemsCount--;
         return res;
