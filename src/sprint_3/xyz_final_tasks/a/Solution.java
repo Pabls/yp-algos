@@ -1,5 +1,8 @@
 package sprint_3.xyz_final_tasks.a;
 
+// A. Поиск в сломанном массиве
+// Отчет 81925510
+// https://contest.yandex.ru/contest/23815/run-report/81925510/
 public class Solution {
 
     public static int brokenSearch(int[] arr, int k) {
