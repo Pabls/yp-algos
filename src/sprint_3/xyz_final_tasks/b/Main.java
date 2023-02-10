@@ -1,11 +1,10 @@
 package sprint_3.xyz_final_tasks.b;
 
-import java.util.Comparator;
 import java.util.Scanner;
 
 // B. Эффективная быстрая сортировка
-// Отчет 81993164
-// https://contest.yandex.ru/contest/23815/run-report/81993164/
+// Отчет 82079116
+// https://contest.yandex.ru/contest/23815/run-report/82079116/
 
 /*
 -- ПРИНЦИП РАБОТЫ И ДОКАЗАТЕЛЬСТВО КОРРЕКТНОСТИ --
@@ -13,7 +12,7 @@ import java.util.Scanner;
 * участников и вывести их имена в определнной последовательности
 * Для удобства работы с данными кождого участника, заведен класс Participant, хранящий в себе информацию об участнике
 * По условию задачи сортировка должна быть произведена метеодом быстрой сортировки без использования дополнительной памяти
-* Для сравнения пользователей между собой, чтобы понять как их сортировать создан отдельный класс ParticipantComparator
+* Для сравнения пользователей между собой, чтобы понять как их сортировать, класс Participant реализует интерфейс Comparable
 * По условию задачи пользователи сравниваются сперва по кол-ву баллов, если кол-во баллов одинаковое , то по кол-ву штрафных баллов,
 * если и они одинаковы то сравниваются их имена в лексикографическом порядке
 * Для сортировыки сделан метод quickSort в котором проверяется граничный случай рекурсии для выхода, производится получение
@@ -33,24 +32,28 @@ import java.util.Scanner;
 * */
 public class Main {
 
-    public static ParticipantComparator comparator = new ParticipantComparator();
     public static StringBuilder stringBuilder = new StringBuilder();
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int arraySize = Integer.parseInt(scanner.nextLine());
-        Participant[] participants = new Participant[arraySize];
+        Comparable<Participant>[] participants = new Participant[arraySize];
         for (int i = 0; i < arraySize; i++) {
             participants[i] = parseParticipant(scanner.nextLine());
         }
-        quickSort(participants, 0, participants.length);
+        quickSort(participants);
         System.out.println(stringBuilder);
     }
 
-    private static void quickSort(Participant[] arr, int leftIndex, int rightIndex) {
+    public static void quickSort(Comparable[] participants) {
+        quickSort(participants, 0, participants.length);
+    }
+
+    private static void quickSort(Comparable[] arr, int leftIndex, int rightIndex) {
         if (leftIndex == rightIndex) {
-            if (leftIndex < arr.length) {
-                stringBuilder.append(arr[leftIndex].name).append("\n");
+            if (leftIndex < arr.length && arr[leftIndex] instanceof Participant) {
+                String name = ((Participant) arr[leftIndex]).name;
+                stringBuilder.append(name).append("\n");
             }
             return;
         }
@@ -60,7 +63,7 @@ public class Main {
         quickSort(arr, pivotIndex + 1, rightIndex);
     }
 
-    private static int partition(Participant[] arr, int leftIndex, int rightIndex) {
+    private static int partition(Comparable[] arr, int leftIndex, int rightIndex) {
         int pivotIndex = leftIndex;
         int elementsLessThanPivotIndex = leftIndex;
         int elementsGreaterThanPivotIndex = leftIndex;
@@ -78,15 +81,14 @@ public class Main {
         return pivotIndex;
     }
 
-    private static void swapTwoElements(Participant[] arr, int leftIndex, int rightIndex) {
-        Participant tmp = arr[leftIndex];
+    private static void swapTwoElements(Comparable[] arr, int leftIndex, int rightIndex) {
+        Comparable tmp = arr[leftIndex];
         arr[leftIndex] = arr[rightIndex];
         arr[rightIndex] = tmp;
     }
 
-    private static boolean isElementGreaterThanPivot(Participant element, Participant pivot) {
-        int res = comparator.compare(element, pivot);
-        return res > 0;
+    private static boolean isElementGreaterThanPivot(Comparable element, Comparable pivot) {
+        return element.compareTo(pivot) > 0;
     }
 
     private static Participant parseParticipant(String str) {
@@ -97,7 +99,7 @@ public class Main {
         return new Participant(name, scores, penalty);
     }
 
-    private static class Participant {
+    private static class Participant implements Comparable<Participant> {
         private String name;
         private int scores;
         private int penalty;
@@ -107,24 +109,21 @@ public class Main {
             this.scores = scores;
             this.penalty = penalty;
         }
-    }
-
-    private static class ParticipantComparator implements Comparator<Participant> {
 
         @Override
-        public int compare(Participant p1, Participant p2) {
-            if (p1.scores > p2.scores) {
+        public int compareTo(Participant p) {
+            if (this.scores > p.scores) {
                 return 1;
-            } else if (p1.scores < p2.scores) {
+            } else if (this.scores < p.scores) {
                 return -1;
             }
 
-            if (p1.penalty < p2.penalty) {
+            if (this.penalty < p.penalty) {
                 return 1;
-            } else if (p1.penalty > p2.penalty) {
+            } else if (this.penalty > p.penalty) {
                 return -1;
             }
-            return p2.name.compareTo(p1.name);
+            return p.name.compareTo(this.name);
         }
     }
 }
