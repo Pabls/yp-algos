@@ -9,16 +9,18 @@ public class Main {
         String second = scanner.nextLine();
 
         int charIndex = 0;
-        for (int i = 0; i < second.length(); i++) {
-            if (charIndex >= first.length()) {
-                break;
-            }
+        int endIndex = second.length();
+        int firstStrLength = first.length();
+        for (int i = 0; i < endIndex; i++) {
             if (first.charAt(charIndex) == second.charAt(i)) {
                 charIndex++;
+                if (charIndex >= firstStrLength) {
+                    break;
+                }
             }
         }
 
-        if (charIndex == first.length()) {
+        if (charIndex >= first.length()) {
             System.out.println("True");
         } else {
             System.out.println("False");

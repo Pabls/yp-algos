@@ -18,8 +18,6 @@ public class Main {
         }
         String valueForSum = reader.readLine();
 
-
-
         //-----------------------------------
         BigInteger res = new BigInteger(builder.toString()).add(new BigInteger(valueForSum));
         char[] chars = String.valueOf(res).toCharArray();
