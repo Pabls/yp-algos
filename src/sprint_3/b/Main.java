@@ -50,8 +50,9 @@ public class Main {
             }
         }
 
-        //concatValues(arr, 0, 0);
+        concatValues(arr, 0, 0);
         System.out.println(Arrays.toString(arr));
+        System.out.println(sb);
     }
 
     private static void concatValues(String[] values, int valueIndex, int index) {
