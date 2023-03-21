@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30030f82-7cf9-4c30-b3be-3da43d08a231" name="Changes" comment="sprint 3: many tasks">
-      <change afterPath="$PROJECT_DIR$/src/sprint_4/a/Main2.java" afterDir="false" />
+    <list default="true" id="30030f82-7cf9-4c30-b3be-3da43d08a231" name="Changes" comment="sprint 4: hash">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sprint_3/a/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_3/a/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sprint_3/b/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_3/b/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sprint_3/i/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_3/i/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sprint_3/k/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_3/k/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sprint_4/a/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_4/a/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sprint_3/c/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_3/c/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sprint_4/h/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_4/h/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +42,7 @@
       <recent name="sprint_4.d" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.sprint_4.a.Main">
+  <component name="RunManager" selected="Application.sprint_4.h.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sprint_3.a.Main" />
       <module name="practicum" />
@@ -106,13 +102,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="sprint_4.h.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sprint_4.h.Main" />
+      <module name="practicum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sprint_4.h.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.sprint_4.h.Main" />
         <item itemvalue="Application.sprint_4.a.Main" />
         <item itemvalue="Application.sprint_4.a.Main" />
         <item itemvalue="Application.sprint_3.b.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Solution (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676489747633</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="sprint 4: hash">
+      <created>1679386013237</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386013238</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,7 +245,8 @@
     <MESSAGE value="sprint 3: fix after review" />
     <MESSAGE value="sprint 2: task L" />
     <MESSAGE value="sprint 3: many tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="sprint 3: many tasks" />
+    <MESSAGE value="sprint 4: hash" />
+    <option name="LAST_COMMIT_MESSAGE" value="sprint 4: hash" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
