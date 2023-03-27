@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30030f82-7cf9-4c30-b3be-3da43d08a231" name="Changes" comment="sprint 4: hash">
+    <list default="true" id="30030f82-7cf9-4c30-b3be-3da43d08a231" name="Changes" comment="sprint 4: task h">
+      <change afterPath="$PROJECT_DIR$/src/sprint_4/c/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_4/f/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_4/j/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_4/l/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sprint_4/xyz_final_tasks/b/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sprint_3/c/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_3/c/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sprint_4/h/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_4/h/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,33 +45,13 @@
       <recent name="sprint_4.d" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.sprint_4.h.Main">
+  <component name="RunManager" selected="Application.sprint_4.xyz_final_tasks.b.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sprint_3.a.Main" />
+      <option name="MAIN_CLASS_NAME" value="sprint_4.c.Main" />
       <module name="practicum" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sprint_3.a.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Solution" />
-      <module name="practicum" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sprint_3.b.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sprint_3.b.Main" />
-      <module name="practicum" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sprint_3.b.*" />
+          <option name="PATTERN" value="sprint_4.c.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,6 +78,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sprint_4.a.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sprint_4.f.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sprint_4.f.Main" />
+      <module name="practicum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sprint_4.f.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,13 +111,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="sprint_4.xyz_final_tasks.b.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sprint_4.xyz_final_tasks.b.Main" />
+      <module name="practicum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sprint_4.xyz_final_tasks.b.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.sprint_4.h.Main" />
-        <item itemvalue="Application.sprint_4.a.Main" />
-        <item itemvalue="Application.sprint_4.a.Main" />
-        <item itemvalue="Application.sprint_3.b.Main" />
+        <item itemvalue="Application.sprint_4.xyz_final_tasks.b.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.sprint_4.a.Main" />
+        <item itemvalue="Application.sprint_4.f.Main" />
+        <item itemvalue="Application.sprint_4.h.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679386013238</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="sprint 4: task h">
+      <created>1679391838792</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679391838793</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,7 +262,8 @@
     <MESSAGE value="sprint 2: task L" />
     <MESSAGE value="sprint 3: many tasks" />
     <MESSAGE value="sprint 4: hash" />
-    <option name="LAST_COMMIT_MESSAGE" value="sprint 4: hash" />
+    <MESSAGE value="sprint 4: task h" />
+    <option name="LAST_COMMIT_MESSAGE" value="sprint 4: task h" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
