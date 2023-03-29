@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30030f82-7cf9-4c30-b3be-3da43d08a231" name="Changes" comment="sprint 4: final task a">
+    <list default="true" id="30030f82-7cf9-4c30-b3be-3da43d08a231" name="Changes" comment="sprint 4: add description">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sprint_4/xyz_final_tasks/a/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_4/xyz_final_tasks/a/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sprint_4/xyz_final_tasks/b/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_4/xyz_final_tasks/b/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sprint_4/b/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprint_4/b/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +41,7 @@
       <recent name="sprint_4.d" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.sprint_4.xyz_final_tasks.a.Main">
+  <component name="RunManager" selected="Application.sprint_4.b.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sprint_4.c.Main" />
       <module name="practicum" />
@@ -82,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sprint_4.f.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sprint_4.f.Main" />
+    <configuration name="sprint_4.b.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sprint_4.b.Main" />
       <module name="practicum" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sprint_4.f.*" />
+          <option name="PATTERN" value="sprint_4.b.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.sprint_4.b.Main" />
         <item itemvalue="Application.sprint_4.xyz_final_tasks.a.Main" />
         <item itemvalue="Application.sprint_4.xyz_final_tasks.b.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.sprint_4.a.Main" />
-        <item itemvalue="Application.sprint_4.f.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680071394022</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="sprint 4: add description">
+      <created>1680093079217</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680093079217</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,7 +289,8 @@
     <MESSAGE value="sprint 4: task h" />
     <MESSAGE value="sprint 4: final task b" />
     <MESSAGE value="sprint 4: final task a" />
-    <option name="LAST_COMMIT_MESSAGE" value="sprint 4: final task a" />
+    <MESSAGE value="sprint 4: add description" />
+    <option name="LAST_COMMIT_MESSAGE" value="sprint 4: add description" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
