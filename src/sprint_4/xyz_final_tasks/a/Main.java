@@ -3,15 +3,12 @@ package sprint_4.xyz_final_tasks.a;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.StringTokenizer;
+import java.util.*;
 
 // A. Поисковая система
 // https://contest.yandex.ru/contest/24414/problems/A/
-// Отчет 84765506
-// https://contest.yandex.ru/contest/24414/run-report/84765506/
+// Отчет 84818014
+// https://contest.yandex.ru/contest/24414/run-report/84818014/
 
 /*
 -- ПРИНЦИП РАБОТЫ И ДОКАЗАТЕЛЬСТВО КОРРЕКТНОСТИ  --
@@ -60,7 +57,7 @@ public class Main {
 
         int queriesCount = Integer.parseInt(reader.readLine());
 
-        Map<String, Integer> uniqueWordsFromSearchQuery = new HashMap<>();
+        Set<String> uniqueWordsFromSearchQuery = new HashSet<>();
         Map<Integer, Integer> currentDocMap = new HashMap<>();
         Comparator<Map.Entry<Integer, Integer>> comparator = createComparator();
 
@@ -71,9 +68,9 @@ public class Main {
 
             while (tokenizer.hasMoreTokens()) {
                 String token = tokenizer.nextToken();
-                if (uniqueWordsFromSearchQuery.get(token) == null && documentsMap.get(token) != null) {
+                if (!uniqueWordsFromSearchQuery.contains(token) && documentsMap.get(token) != null) {
                     documentsMap.get(token).forEach((key, value) -> currentDocMap.merge(key, value, Integer::sum));
-                    uniqueWordsFromSearchQuery.put(token, 1);
+                    uniqueWordsFromSearchQuery.add(token);
                 }
             }
 

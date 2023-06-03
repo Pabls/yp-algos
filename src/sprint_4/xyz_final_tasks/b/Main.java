@@ -7,8 +7,8 @@ import java.util.Objects;
 
 // B. Хеш-таблица
 // https://contest.yandex.ru/contest/24414/problems/B/
-// Отчет 84638868
-// https://contest.yandex.ru/contest/24414/run-report/84638868/
+// Отчет 84817820
+// https://contest.yandex.ru/contest/24414/run-report/84817820/
 
 /*
 -- ПРИНЦИП РАБОТЫ И ДОКАЗАТЕЛЬСТВО КОРРЕКТНОСТИ  --
@@ -31,15 +31,26 @@ import java.util.Objects;
 * */
 public class Main {
 
+    private static final int MIN_CAPACITY = 10;
+
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int commandCount = Integer.parseInt(reader.readLine());
-        CustomHashMap hashTable = new CustomHashMap();
+        CustomHashMap hashTable = new CustomHashMap(getCapacity(commandCount));
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < commandCount; i++) {
             handleCommand(reader.readLine(), hashTable, sb);
         }
         System.out.println(sb);
+    }
+
+    private static int getCapacity(int commandCount) {
+        int capacity = commandCount / MIN_CAPACITY;
+        if (capacity < MIN_CAPACITY) {
+            return MIN_CAPACITY;
+        } else {
+            return capacity;
+        }
     }
 
     private static void handleCommand(String command, CustomHashMap hashTable, StringBuilder sb) {
@@ -65,12 +76,13 @@ public class Main {
 
 
 class CustomHashMap {
-    private static final int CAPACITY = 509;
 
+    private int capacity;
     private Node[] buckets;
 
-    CustomHashMap() {
-        buckets = new Node[CAPACITY];
+    CustomHashMap(int capacity) {
+        this.capacity = capacity;
+        buckets = new Node[capacity];
     }
 
     private void putValue(Node node, Integer key, Integer value) {
@@ -78,7 +90,6 @@ class CustomHashMap {
             node.value = value;
         } else if (node.next == null) {
             Node nextNode = new Node(key, value);
-            nextNode.prev = node;
             node.next = nextNode;
         } else {
             putValue(node.next, key, value);
@@ -111,27 +122,27 @@ class CustomHashMap {
         return getValue(node, key);
     }
 
-    private Integer deleteValue(Node node, Integer key, int index) {
+    private Integer deleteValue(Node node, Node parentNode, Integer key, int index) {
         if (node == null) {
             return null;
         } else if (node.key.equals(key)) {
             Integer value = node.value;
-            if (node.prev == null) {
+            if (parentNode == null) {
                 buckets[index] = node.next;
             } else {
-                node.prev.next = node.next;
+                parentNode.next = node.next;
             }
             node = null;
             return value;
         } else {
-            return deleteValue(node.next, key, index);
+            return deleteValue(node.next, node, key, index);
         }
     }
 
     public Integer delete(Integer key) {
         int index = getIndex(key);
         Node node = buckets[index];
-        return deleteValue(node, key, index);
+        return deleteValue(node, null, key, index);
     }
 
     private int getIndex(Integer key) {
@@ -139,14 +150,13 @@ class CustomHashMap {
             return 0;
         }
 
-        return Math.abs(key.hashCode() % CAPACITY);
+        return Math.abs(key.hashCode() % capacity);
     }
 
     private class Node {
         private Integer key;
         private Integer value;
         private Node next;
-        private Node prev;
 
         public Node(Integer key, Integer value) {
             this.key = key;
